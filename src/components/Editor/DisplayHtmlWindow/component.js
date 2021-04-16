@@ -1,4 +1,3 @@
-/* eslint-disable import/extensions */
 export default {
   name: 'DisplayHtmlWindow',
   props: {
@@ -7,7 +6,7 @@ export default {
       default: '',
     },
   },
-  components: { },
+  components: {},
 
   methods: {
     copyToClipboard() {

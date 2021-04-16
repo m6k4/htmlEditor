@@ -1,7 +1,4 @@
-/* eslint-disable import/extensions */
-import {
-  Editor, EditorContent, EditorMenuBar, EditorMenuBubble,
-} from 'tiptap';
+import { Editor, EditorContent, EditorMenuBar, EditorMenuBubble } from 'tiptap';
 import {
   Bold,
   Italic,
@@ -61,5 +58,4 @@ export default {
   beforeDestroy() {
     this.editor.destroy();
   },
-
 };
