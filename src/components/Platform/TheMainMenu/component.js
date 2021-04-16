@@ -1,4 +1,3 @@
-/* eslint-disable import/extensions */
 import ShUserAvatar from '@/components/Helpers/ShUserAvatar';
 
 export default {
