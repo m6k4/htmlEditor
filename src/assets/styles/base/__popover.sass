@@ -1,0 +1,21 @@
+.el-popover
+  font-size: 12px
+  text-align: left
+  &--error
+    background: $app-red
+    color: $app-red + 100
+    text-align: center
+  &--error[x-placement^="top"] .popper__arrow::after
+    border-top-color: $app-red
+  &__label
+    font-size: 12px
+    color: $app-text-color + 100
+    font-weight: 700
+  &__input-close-icon
+    cursor: pointer
+    color: #c0c4cc
+    position: absolute
+    right: 20px
+    top: 35px
+.el-popover--plain
+  padding: 10px 10px

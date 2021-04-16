@@ -1,0 +1,43 @@
+.HtmlEditor
+  margin: 0
+  height: 80%
+
+  &__content
+    margin: 10px 20px
+    padding: 0px 10px
+    max-height: 285px
+
+  &__menubar
+    display: flex
+    flex-wrap: wrap
+    margin: 10px 10px
+
+  .el-button
+    width: 35px
+    background: $app-background-color
+    border-color: $app-background-color
+    font-size: 20px
+
+  .el-button:hover
+    color: $app-main-color-lighten
+
+  .el-button.is-active
+    color: $app-main-color-lighten
+
+.ProseMirror
+  background: $app-card-background-color
+  border-color: $app-card-background-color
+  max-height: 270px
+  overflow-y: auto
+  border-radius: 10px
+  padding-left: 5px
+  color: $app-text-color
+  
+  &-focused
+    outline: none 
+    border-radius: 10px
+
+
+
+
+ 

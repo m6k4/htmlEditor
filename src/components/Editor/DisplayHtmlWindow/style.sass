@@ -1,0 +1,38 @@
+.DisplayHtmlWindow
+  margin: 10px
+  display: flex
+  flex-direction: column
+
+  &__header
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+
+  &__title
+    color: $app-description-color
+    padding: 15px
+      
+  &__content
+    margin: 10px
+    max-height: 245px
+    overflow-y: auto
+    background: $app-card-background-color
+    border-radius: 10px
+    padding: 14px 10px
+    cursor: context-menu
+    color: $app-text-color
+
+  &__button
+    margin-left: auto
+    font-size: 23px
+    color: $app-main-color
+    margin-bottom: 13px
+  
+  &__button:hover
+    color: $app-main-color-lighten
+    cursor: pointer
+
+
+
+
+ 

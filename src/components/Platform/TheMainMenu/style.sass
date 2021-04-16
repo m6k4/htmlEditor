@@ -1,0 +1,79 @@
+.TheMainMenu
+  background-color: $app-second-color
+  height: 100%
+  &__user-info
+    display: flex
+    align-items: center
+    justify-content: center
+    height: 180px
+    background-color: $app-second-color + 5
+    border-bottom: 1px solid $app-second-color + 15
+    .user_info__avatar
+      display: flex
+      align-items: center
+      justify-content: center      
+      border-radius: 50%
+      margin: auto
+    .user-info__login
+      font-weight: 700
+      color: #ffffff
+      width: 100%
+      font-size: 16px
+      margin: 10px 0px 0px 0px
+      width: 100%
+      text-align: center
+    .user-info__email
+      font-weight: 400
+      color: $app-second-color + 100
+      font-size: 12px
+      width: 100%
+      text-align: center
+    .user-info__profile
+      cursor: pointer
+      color: $app-main-color + 100
+      font-weight: 400
+      font-size: 12px
+      width: 100%
+      text-align: center
+      margin: 10px 0px 0px 0px
+      &:hover
+        font-weight: 700
+  &__menu
+    .menu__title
+      color: $app-second-color + 150
+      text-transform: uppercase
+      font-size: 12px
+      font-weight: 700
+      padding-left: 20px
+      background-color: $app-second-color - 10
+      height: 30px
+      margin: 0px
+      line-height: 30px
+    .menu__list
+      border-right: none
+      background: none
+    .menu__item
+      height: 45px
+      line-height: 42px
+      font-size: 12px
+      color: $app-second-color + 100
+      border-top: 1px solid $app-second-color + 15
+      border-bottom: 1px solid $app-second-color - 15
+      span
+        display: inline-block
+        margin-left: 15px
+      &:hover
+        background: $app-second-color + 5
+        border-left: 2px solid $app-main-color
+        padding-left: 18px !important
+      &:focus
+        background: $app-second-color + 5
+        border-left: 2px solid $app-main-color
+        padding-left: 18px !important        
+    .is-active
+      border-left: 2px solid $app-main-color
+      padding-left: 18px !important
+      color: $app-main-color + 100
+      .fa
+        color: $app-main-color + 100
+

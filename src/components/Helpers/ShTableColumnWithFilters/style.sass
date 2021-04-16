@@ -1,0 +1,79 @@
+.ShTableColumnWithFilters
+  width: 100%
+  overflow: hidden
+  &__column-name
+    display: block
+  &__column-name--active
+    color: $app-main-color
+  .el-dropdown
+    width: 100%
+    line-height: 30px
+
+  &__filter
+  &__filter--active
+    &:hover
+      .filter__icon
+        visibility: visible
+
+  // select      
+  .filter-select
+    .filter-select__text
+      font-size: 12px
+      font-weight: 400
+      color: $app-text-color  + 80
+      .fa
+        visibility: hidden
+        @include transition(all 0.3s ease)
+      &:hover
+        .fa
+          visibility: visible 
+    .filter-select__text--inactive
+      color: $app-text-color  + 150
+      @include transition(all 0.3s ease)     
+      &:hover
+        color: $app-text-color  + 80
+    .filter-select__text--active
+      color: $app-main-color
+
+  // datepicker
+  .filter-daterange
+    &__text
+      font-size: 12px
+      font-weight: 400
+      color: $app-text-color  + 80
+      .fa
+        visibility: hidden
+        @include transition(all 0.3s ease)
+      &:hover
+        .fa
+          visibility: visible       
+    .filter-daterange__text--inactive
+      color: $app-text-color  + 150
+      @include transition(all 0.3s ease)     
+      &:hover
+        color: $app-text-color  + 80
+
+  // input
+  .filter-input
+    &__input
+      @include breakpoint(laptop)
+        display: none
+    &__text
+      font-size: 12px
+      font-weight: 400
+      color: $app-text-color  + 80
+      .fa
+        visibility: hidden
+        @include transition(all 0.3s ease)
+      &:hover
+        .fa
+          visibility: visible       
+    .filter-input__text--inactive
+      color: $app-text-color  + 150
+      @include transition(all 0.3s ease)     
+      &:hover
+        color: $app-text-color  + 80
+  .filter-input--active
+    color: red
+    .filter-input__icon
+      visibility: visible
